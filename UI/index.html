@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>File Manager</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Thông tin tập tin</h1>
+        <div class="user-act mt-4">
+            <p class="user-name">Xin chào: abcd</p>
+            <button class="btn btn-primary btn-sm">Tải tất cả</button>
+            <button class="btn btn-danger btn-sm" onclick="location.href='logout.php'">Đăng xuất</button>
+        </div>
+        <div class="table-file mt-4">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Tên Tập tin</th>
+                        <th scope="col">Kích thước</th>
+                        <th scope="col">Ngày sửa</th>
+                        <th scope="col">Loại</th>
+                        <th scope="col">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="check"></td>
+                        <td><a href="#">File 1</a></td>
+                        <td>1.5 MB</td>
+                        <td>20/10/2020</td>
+                        <td>Thư mục</td>
+                        <td><button class="btn btn-primary btn-sm">Tải xuống</button></td>
+           
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check"></td>
+                        <td>File 2</td>
+                        <td>1.5 MB</td>
+                        <td>20/10/2020</td>
+                        <td>Tệp Tin</td>
+                        <td><button class="btn btn-primary btn-sm">Tải xuống</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
